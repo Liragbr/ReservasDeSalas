@@ -34,8 +34,12 @@ dotnet ef database update
 
 1. Clone this repository.
 2. Configure the database connection in the `appsettings.json` file.
-3. Run the migrations to create the database using the following command:
-4. Run the application and use the API routes to interact with the room reservations.
+```
+"DefaultConnection": "Server=exmp\\SQLEXPRESS;Database=ReservationSystemDb;Trusted_Connection=True;MultipleActiveResultSets=true"
+```
+```
+"DefaultConnection": "Server=exmp\\SQLEXPRESS;DataBase=ReservationSystemDb;Integrated Security=SSPI;TrustServerCertificate=True"
+```
 
 ## API Routes
 
