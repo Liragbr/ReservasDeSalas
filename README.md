@@ -1,6 +1,9 @@
 # 📅 Room Reservation System
 
-A system to allow users to reserve rooms for events. Developed in C# with ASP.NET Core using .NET 8.0.
+
+This system simplifies the process of reserving rooms for various events. Whether you're planning meetings, conferences, or other gatherings, our system offers a user-friendly solution for managing room reservations effectively.
+
+With features like creating, viewing, updating, and canceling reservations, along with seamless integration with a SQL Server database using Entity Framework Core, our system provides flexibility and reliability.
 
 ## Features
 
@@ -13,6 +16,13 @@ A system to allow users to reserve rooms for events. Developed in C# with ASP.NE
 
 The database integration was done using Entity Framework Core with the SQL Server provider. Migrations were used to manage the database structure.
 
+```
+dotnet ef migrations add *InitialCreate*
+```
+```
+dotnet ef database update
+```
+
 ## Used Packages
 
 - Microsoft.EntityFrameworkCore
@@ -24,7 +34,7 @@ The database integration was done using Entity Framework Core with the SQL Serve
 
 1. Clone this repository.
 2. Configure the database connection in the `appsettings.json` file.
-3. Run the migrations to create the database using the `dotnet ef database update` command.
+3. Run the migrations to create the database using the following command:
 4. Run the application and use the API routes to interact with the room reservations.
 
 ## API Routes
@@ -36,3 +46,4 @@ The database integration was done using Entity Framework Core with the SQL Serve
 - **DELETE /api/reservations/{id}**: Deletes an existing room reservation.
 
 Make sure to test all the features to ensure that the system is functioning as expected.
+
