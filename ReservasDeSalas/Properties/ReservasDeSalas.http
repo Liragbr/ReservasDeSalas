@@ -1,0 +1,6 @@
+@ReservasDeSalas_HostAddress = http://localhost:5251
+
+GET {{ReservasDeSalas_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
